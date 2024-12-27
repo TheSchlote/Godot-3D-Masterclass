@@ -1,0 +1,84 @@
+# Remove the line below if you want to inherit .editorconfig settings from higher directories
+root = true
+
+# C# files
+[*.cs]
+
+#### Core EditorConfig Options ####
+indent_size = 4
+indent_style = space
+tab_width = 4
+end_of_line = crlf
+insert_final_newline = false
+
+#### .NET Code Actions ####
+dotnet_hide_advanced_members = false
+dotnet_member_insertion_location = with_other_members_of_the_same_kind
+dotnet_property_generation_behavior = prefer_throwing_properties
+dotnet_search_reference_assemblies = true
+
+#### .NET Coding Conventions ####
+dotnet_separate_import_directive_groups = false
+dotnet_sort_system_directives_first = false
+
+dotnet_style_qualification_for_event = false
+dotnet_style_qualification_for_field = false
+dotnet_style_qualification_for_method = false
+dotnet_style_qualification_for_property = false
+dotnet_style_predefined_type_for_locals_parameters_members = true
+dotnet_style_predefined_type_for_member_access = true
+
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity
+dotnet_style_require_accessibility_modifiers = for_non_interface_members
+dotnet_prefer_system_hash_code = true
+dotnet_style_allow_multiple_blank_lines_experimental = true
+
+#### C# Coding Conventions ####
+csharp_style_var_elsewhere = false
+csharp_style_var_for_built_in_types = false
+csharp_style_var_when_type_is_apparent = false
+csharp_style_expression_bodied_methods = false
+csharp_style_prefer_braces = true
+csharp_using_directive_placement = outside_namespace
+
+#### Naming Styles ####
+
+# Class, Struct, Enum, and Delegate names - PascalCase
+dotnet_naming_rule.types_should_be_pascal_case.symbols = class, struct, enum, delegate
+dotnet_naming_rule.types_should_be_pascal_case.style = pascal_case
+
+# Method, Property, and Event names - PascalCase
+dotnet_naming_rule.members_should_be_pascal_case.symbols = method, property, event
+dotnet_naming_rule.members_should_be_pascal_case.style = pascal_case
+
+# Local variables and parameters - camelCase
+dotnet_naming_rule.locals_should_be_camel_case.symbols = local, parameter
+dotnet_naming_rule.locals_should_be_camel_case.style = camel_case
+
+# Constants - ALL_UPPERCASE
+dotnet_naming_rule.constants_should_be_uppercase.symbols = constant
+dotnet_naming_rule.constants_should_be_uppercase.style = uppercase
+
+# Private fields - _camelCase
+dotnet_naming_rule.private_fields_should_be_camel_case.symbols = field
+dotnet_naming_rule.private_fields_should_be_camel_case.style = _camel_case
+dotnet_naming_symbols.field.applicable_accessibilities = private
+
+# Interfaces - PascalCase (no I prefix)
+dotnet_naming_rule.interfaces_should_be_pascal_case.symbols = interface
+dotnet_naming_rule.interfaces_should_be_pascal_case.style = pascal_case
+
+# Symbol Specifications
+dotnet_naming_symbols.types.applicable_kinds = class, struct, enum, delegate
+dotnet_naming_symbols.members.applicable_kinds = method, property, event
+dotnet_naming_symbols.locals.applicable_kinds = local, parameter
+dotnet_naming_symbols.constants.applicable_kinds = field
+dotnet_naming_symbols.interfaces.applicable_kinds = interface
+
+# Naming Styles
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+dotnet_naming_style.camel_case.capitalization = camel_case
+dotnet_naming_style.uppercase.capitalization = all_upper
+dotnet_naming_style._camel_case.capitalization = camel_case
+dotnet_naming_style._camel_case.required_prefix = _
