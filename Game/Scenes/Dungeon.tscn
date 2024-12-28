@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbjdcquqcoyq5"]
+
+[ext_resource type="MeshLibrary" uid="uid://b4ped75ilugkv" path="res://Imported Assets/Dungeon/DungeonMeshLibrary.tres" id="1_8x6si"]
+
+[node name="Dungeon" type="Node3D"]
+
+[node name="Sunllight" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 2, 0)
+shadow_enabled = true
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("1_8x6si")
+cell_size = Vector3(1, 1, 1)
+data = {
+"cells": PackedInt32Array(2, 2, 1, 6, 2, 1, 65534, 2, 1, 65534, 65534, 1, 2, 65530, 1, 6, 65530, 1, 6, 65534, 1, 2, 65534, 1, 65534, 65530, 1, 65534, 65528, 2, 2, 65528, 5, 65532, 65528, 1048584, 65532, 4, 655368, 8, 65528, 8, 8, 4, 1441800, 6, 65528, 655362, 8, 65532, 1048578, 8, 0, 1048578, 65532, 65532, 1048578, 65532, 0, 1048578, 0, 4, 2, 4, 4, 2)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)

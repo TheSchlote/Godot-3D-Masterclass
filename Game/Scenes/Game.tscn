@@ -1,27 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://csuvw7kemakiq"]
+[gd_scene load_steps=6 format=3 uid="uid://csuvw7kemakiq"]
 
-[ext_resource type="Texture2D" uid="uid://du5ckrp75gvs0" path="res://icon.svg" id="1_6npgx"]
 [ext_resource type="PackedScene" uid="uid://bgrbgilfgopku" path="res://Scenes/Character.tscn" id="2_1io3c"]
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="2_fplol"]
 [ext_resource type="Script" path="res://Scripts/SpringArm.cs" id="3_5o0jy"]
+[ext_resource type="PackedScene" uid="uid://bbjdcquqcoyq5" path="res://Scenes/Dungeon.tscn" id="4_ls1if"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_142m7"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5p22o"]
-albedo_texture = ExtResource("1_6npgx")
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_473xf"]
-material = SubResource("StandardMaterial3D_5p22o")
-size = Vector2(5, 5)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_6d0qm"]
-size = Vector3(5, 0, 5)
-
 [node name="Game" type="Node3D"]
-
-[node name="Sunllight" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 2, 0)
-shadow_enabled = true
 
 [node name="Player" type="Node" parent="." node_paths=PackedStringArray("Character", "SpringArm")]
 script = ExtResource("2_fplol")
@@ -41,12 +27,4 @@ script = ExtResource("3_5o0jy")
 [node name="Camera" type="Camera3D" parent="CharacterBody3D/SpringArm3D"]
 h_offset = 1.0
 
-[node name="Floor" type="StaticBody3D" parent="."]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
-mesh = SubResource("PlaneMesh_473xf")
-skeleton = NodePath("../..")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
-shape = SubResource("BoxShape3D_6d0qm")
+[node name="Dungeon" parent="." instance=ExtResource("4_ls1if")]
