@@ -1,8 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://csuvw7kemakiq"]
+[gd_scene load_steps=9 format=3 uid="uid://csuvw7kemakiq"]
 
 [ext_resource type="Texture2D" uid="uid://du5ckrp75gvs0" path="res://icon.svg" id="1_6npgx"]
 [ext_resource type="PackedScene" uid="uid://bgrbgilfgopku" path="res://Scenes/Character.tscn" id="2_1io3c"]
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="2_fplol"]
+[ext_resource type="Script" path="res://Scripts/SpringArm.cs" id="3_5o0jy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_142m7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5p22o"]
 albedo_texture = ExtResource("1_6npgx")
@@ -16,21 +19,27 @@ size = Vector3(5, 0, 5)
 
 [node name="Game" type="Node3D"]
 
-[node name="Camera" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 3, 4)
-
 [node name="Sunllight" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 2, 0)
 shadow_enabled = true
 
-[node name="Player" type="Node" parent="." node_paths=PackedStringArray("Character", "Camera")]
+[node name="Player" type="Node" parent="." node_paths=PackedStringArray("Character", "SpringArm")]
 script = ExtResource("2_fplol")
 Character = NodePath("../CharacterBody3D")
-Camera = NodePath("../Camera")
+SpringArm = NodePath("../CharacterBody3D/SpringArm3D")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("2_1io3c")]
 WalkingSpeed = 4.0
 RunningSpeed = 8.0
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62147, 0)
+shape = SubResource("BoxShape3D_142m7")
+spring_length = 5.0
+script = ExtResource("3_5o0jy")
+
+[node name="Camera" type="Camera3D" parent="CharacterBody3D/SpringArm3D"]
+h_offset = 1.0
 
 [node name="Floor" type="StaticBody3D" parent="."]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)

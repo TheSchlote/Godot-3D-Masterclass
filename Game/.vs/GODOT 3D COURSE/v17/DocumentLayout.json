@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "T:\\Repos\\Godot-3D-Masterclass\\Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D506F9D2-F0FE-4F73-9B42-34AB26DDBEEB}|Godot 3D Course.csproj|t:\\repos\\godot-3d-masterclass\\game\\scripts\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D506F9D2-F0FE-4F73-9B42-34AB26DDBEEB}|Godot 3D Course.csproj|solutionrelative:scripts\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|T:\\Repos\\Godot-3D-Masterclass\\Game\\Scripts\\SpringArm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\SpringArm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D506F9D2-F0FE-4F73-9B42-34AB26DDBEEB}|Godot 3D Course.csproj|t:\\repos\\godot-3d-masterclass\\game\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D506F9D2-F0FE-4F73-9B42-34AB26DDBEEB}|Godot 3D Course.csproj|solutionrelative:scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D506F9D2-F0FE-4F73-9B42-34AB26DDBEEB}|Godot 3D Course.csproj|t:\\repos\\godot-3d-masterclass\\game\\scripts\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D506F9D2-F0FE-4F73-9B42-34AB26DDBEEB}|Godot 3D Course.csproj|solutionrelative:scripts\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,12 +31,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SpringArm.cs",
+              "DocumentMoniker": "T:\\Repos\\Godot-3D-Masterclass\\Game\\Scripts\\SpringArm.cs",
+              "RelativeDocumentMoniker": "Scripts\\SpringArm.cs",
+              "ToolTip": "T:\\Repos\\Godot-3D-Masterclass\\Game\\Scripts\\SpringArm.cs",
+              "RelativeToolTip": "Scripts\\SpringArm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T05:38:54.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Character.cs",
               "DocumentMoniker": "T:\\Repos\\Godot-3D-Masterclass\\Game\\Scripts\\Character.cs",
               "RelativeDocumentMoniker": "Scripts\\Character.cs",
               "ToolTip": "T:\\Repos\\Godot-3D-Masterclass\\Game\\Scripts\\Character.cs",
               "RelativeToolTip": "Scripts\\Character.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAQwGYAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAqwGYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-28T03:58:12.832Z",
               "EditorCaption": ""
@@ -45,7 +62,7 @@
               "RelativeDocumentMoniker": "Scripts\\Player.cs",
               "ToolTip": "T:\\Repos\\Godot-3D-Masterclass\\Game\\Scripts\\Player.cs",
               "RelativeToolTip": "Scripts\\Player.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-28T03:57:50.854Z",
               "EditorCaption": ""
