@@ -18,9 +18,6 @@ public partial class Player : Node
         // Calculate movement direction relative to the camera
         _moveDirection = (Camera.Basis.X * _inputDirection.X + Camera.Basis.Z * _inputDirection.Y).Normalized();
 
-        // Debugging movement direction
-        GD.Print($"Input: {_inputDirection}, Move Direction: {_moveDirection}");
-
         // Move character directly (no delta multiplication)
         Character.Move(_moveDirection);
     }
@@ -35,9 +32,13 @@ public partial class Player : Node
         {
             Character.Walk();
         }
-        else if (@event.IsActionPressed("Jump"))
+        if (@event.IsActionPressed("Jump"))
         {
-            Character.Jump();
-        }   
+            Character.StartJump();
+        }
+        else if (@event.IsActionReleased("Jump"))
+        {
+            Character.CompleteJump();
+        }
     }
 }
