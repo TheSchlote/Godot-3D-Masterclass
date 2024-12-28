@@ -23,11 +23,13 @@ public partial class Character : CharacterBody3D
     private Vector3 _direction = Vector3.Zero;
     private AnimationTree _animation;
     private Node3D _rig;
+    private AnimationNodeStateMachinePlayback _stateMachine;
     public override void _Ready()
     {
         _animation = GetNode<AnimationTree>("AnimationTree");
         _rig = GetNode<Node3D>("Rig");
         _movementSpeed = WalkingSpeed;
+        _stateMachine = (AnimationNodeStateMachinePlayback)_animation.Get("parameters/playback");
     }
 
     // Method to set movement direction
@@ -47,6 +49,21 @@ public partial class Character : CharacterBody3D
     {
         _movementSpeed = RunningSpeed;
     }
+    public void Jump()
+    {
+        if (IsOnFloor())
+        {
+            _stateMachine.Travel("Jump_Start");
+        }
+    }
+    
+    public void ApplyJumpVelocity()
+    {
+        Vector3 velocity = Velocity;
+        velocity.Y = JumpVelocity;
+        Velocity = velocity;
+    }
+
 
     public override void _PhysicsProcess(double delta)
     {
@@ -59,12 +76,6 @@ public partial class Character : CharacterBody3D
         if (!IsOnFloor())
         {
             velocity.Y -= _gravity * (float)delta;
-        }
-
-        // Handle jumping
-        if (Input.IsActionJustPressed("ui_accept") && IsOnFloor())
-        {
-            velocity.Y = JumpVelocity;
         }
 
         // Apply movement or deceleration based on input

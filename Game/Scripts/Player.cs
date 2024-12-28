@@ -35,5 +35,9 @@ public partial class Player : Node
         {
             Character.Walk();
         }
+        else if (@event.IsActionPressed("Jump"))
+        {
+            Character.Jump();
+        }   
     }
 }
