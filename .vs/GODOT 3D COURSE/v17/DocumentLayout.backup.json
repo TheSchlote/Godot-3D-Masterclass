@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "T:\\Repos\\Godot-3D-Masterclass\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D506F9D2-F0FE-4F73-9B42-34AB26DDBEEB}|Godot 3D Course.csproj|t:\\repos\\godot-3d-masterclass\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D506F9D2-F0FE-4F73-9B42-34AB26DDBEEB}|Godot 3D Course.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|T:\\Repos\\Godot-3D-Masterclass\\Character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D506F9D2-F0FE-4F73-9B42-34AB26DDBEEB}|Godot 3D Course.csproj|t:\\repos\\godot-3d-masterclass\\scripts\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D506F9D2-F0FE-4F73-9B42-34AB26DDBEEB}|Godot 3D Course.csproj|solutionrelative:scripts\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Character.cs",
-              "DocumentMoniker": "T:\\Repos\\Godot-3D-Masterclass\\Character.cs",
-              "RelativeDocumentMoniker": "Character.cs",
-              "ToolTip": "T:\\Repos\\Godot-3D-Masterclass\\Character.cs",
-              "RelativeToolTip": "Character.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T03:54:43.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Player.cs",
-              "DocumentMoniker": "T:\\Repos\\Godot-3D-Masterclass\\Player.cs",
-              "RelativeDocumentMoniker": "Player.cs",
-              "ToolTip": "T:\\Repos\\Godot-3D-Masterclass\\Player.cs",
-              "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABAAAAAAAAAAA==",
+              "Title": "Character.cs",
+              "DocumentMoniker": "T:\\Repos\\Godot-3D-Masterclass\\Scripts\\Character.cs",
+              "RelativeDocumentMoniker": "Scripts\\Character.cs",
+              "ToolTip": "T:\\Repos\\Godot-3D-Masterclass\\Scripts\\Character.cs",
+              "RelativeToolTip": "Scripts\\Character.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAcwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T03:41:11.063Z",
+              "WhenOpened": "2024-12-28T02:26:14.443Z",
               "EditorCaption": ""
             }
           ]
