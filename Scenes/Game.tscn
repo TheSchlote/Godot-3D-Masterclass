@@ -28,8 +28,11 @@ Character = NodePath("../CharacterBody3D")
 Camera = NodePath("../Camera")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("2_1io3c")]
+WalkingSpeed = 4.0
+RunningSpeed = 8.0
 
 [node name="Floor" type="StaticBody3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
 mesh = SubResource("PlaneMesh_473xf")
